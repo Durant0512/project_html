@@ -139,6 +139,11 @@ li {
 
 .banners__title {
     width: 100%;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #555656;
+    font-family: "Tahoma";
 }
 
 .banners__left {
@@ -158,6 +163,71 @@ li {
     padding: 15px 0;
 }
 
+.banners__left, .banners__right {
+    width: 48%;
+}
+
+.banners__Img {
+    width: 100%;
+}
+
+.banners__description {
+    border-top: 1px solid black;
+    margin: 5px 0 0 0;
+    padding-top: 15px;
+    color: #3c3c3c;
+    font-family: "Helvetica"
+}
+
+.banners__wrap {
+    position: relative;
+}
+
+.banners__overlay {
+    position: absolute;
+    left: 0;;
+    top: 50px;
+    color: white;
+    padding: 15px;
+}
+
+.banners__overlayText, .banners__overlayWeightText {
+    font-family: "Novecentowide";
+    text-transform: uppercase;
+}
+.banners__overlayText {
+    font-weight: normal;
+    font-size: 30px;
+    margin: 0;
+}
+
+.banners__overlayWeightText {
+    font-size: 40px;
+    margin: 10px 0 0 0;
+}
+
+.morelink {
+    margin-left: auto;
+    display: block;
+    width: 65px;
+    color: white;
+    background: black;
+    text-align: center;
+    display: flex;
+}
+
+.morelink__arrow {
+    border-left: 1px solid white;
+    padding: 2px 0 2px 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.morelink__text {
+    padding: 2px 5px;
+    display: block;
+}
+
 /*End Banners styles */
 
 @media (max-width: 1000px) {
@@ -169,6 +239,21 @@ li {
     }
 }
 
+@media (max-width: 975px) {
+
+    .banners__overlay {
+        top: 15px;
+    }
+
+    .banners__overlayText {
+        font-size: 24px;
+
+    }
+
+    .banners__overlayWeightText {
+        font-size: 30px;
+    }
+}
 
 @media (max-width: 700px) {
     .header__top {
@@ -176,17 +261,46 @@ li {
         text-align: center;
         margin: 0 0 15px 0;
     }
+
     .header__title {
         margin: 15px 0;
     }
+
     .header__description {
         margin: 0;
         padding: 0;
         border: none;
         width: 100%;
     }
+
     .header__menu {
         justify-content: center;
     }
 
+    .banners {
+        justify-content: center;
+        align-content: center;
+    }
+
+    .banners__left, .banners__right {
+        width: 75%;
+    }
+    .banners__left {
+        margin-bottom: 15px;
+    }
 }
+
+@media (max-width: 500px) {
+    .banners__left, .banners__right {
+        width: 95%;
+    }
+
+    .banners__overlayText {
+        font-size: 18px;
+    }
+
+    .banners__overlayWeightText {
+        font-size: 24px;
+    }
+}
+
