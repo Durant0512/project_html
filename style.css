@@ -134,7 +134,9 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccc;
 }
 
 .banners__title {
@@ -214,6 +216,7 @@ li {
     background: black;
     text-align: center;
     display: flex;
+    line-height: 26px;
 }
 
 .morelink__arrow {
@@ -228,7 +231,121 @@ li {
     display: block;
 }
 
-/*End Banners styles */
+/* End Banners styles */
+
+/* Block Info styles */
+
+.info {
+    display: flex;
+}
+
+.info__contacts,
+.info__about,
+.info__news {
+    width: 33.33%;
+}
+
+.info__about {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc; 
+    padding: 0 35px;
+    font-size: 16px;
+    line-height: 23px;
+    color: #3c3c3c;
+    font-family: "Helvetica CE";
+}
+
+.info__title {
+    margin: 0 0 35px 0;
+    color: #565656;
+    font-family: "Helvetica";
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+
+.info__contacts {
+    padding-left: 35px;
+}
+
+.info__news {
+    padding-right: 10px;
+}
+
+.info__chapter {
+    font-size: 16px;
+    color: #565656;
+    margin: 0 0 10px 0;
+}
+
+.info__description {
+    margin: 0;
+    font-size: 14px;
+    color: #939393;
+    font-family: "Tahoma";
+}
+
+.info__article {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px dashed#636363;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.info__date {
+    border-right: 1px solid #ccc;
+    padding: 0 10px 0 3px;
+    margin-right: 10px;
+}
+
+.info__num {
+    color: #f2ac04;
+    font-family: "Helvetica";
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.info__mon {
+    font-size: 10px;
+    font-style: normal;
+
+}
+
+.info__icon {
+    color: #c0c0c0;
+    font-size: 28px !important;
+    width: 35px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.info__item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed#636363;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.info__item:last-child {
+    border: none;
+    align-items: flex-start;
+}
+
+.info__phone {
+    font-weight: bold;
+    color: #757575;
+    font-size: 18px;
+}
+
+.info__address {
+    color: #757575;
+    line-height: 25px;
+}
+
+/*End block Info styles */
 
 @media (max-width: 1000px) {
     .container {
